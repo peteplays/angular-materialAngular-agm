@@ -1,0 +1,21 @@
+#fab {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+
+  button {
+    opacity: .6;
+    font-size: 60px;
+
+    transition: .3s ease-in-out;
+
+    &:hover {
+      opacity: .8;
+    }
+
+     &.open {
+      transform: rotate(45deg);
+    }
+  }
+}

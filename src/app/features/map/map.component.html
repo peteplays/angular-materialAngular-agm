@@ -1,0 +1,22 @@
+<agm-map
+  id="map"
+  [latitude]="lat"
+  [longitude]="lng"
+  [zoom]="zoom"
+  [scrollwheel]="scrollwheel"
+  [streetViewControl]="streetViewControl"
+  [streetViewControlOptions]="streetViewControlOptions"
+  [zoomControlOptions]="zoomControlOptions"
+  [styles]="customStyle"
+  (centerChange)="mapMove($event)"
+  (mapClick)="mapClick($event)"
+  >
+  <agm-marker
+    *ngFor="let listing of currentListings"
+    [latitude]="listing.lat"
+    [longitude]="listing.lng"
+    [markerDraggable]="true"
+    [iconUrl]="icon"
+    (dragEnd)="markerMove(listing, $event)"
+  ></agm-marker>
+</agm-map>
