@@ -1,6 +1,6 @@
 {
-  "name": "p",
-  "version": "0.0.0",
+  "name": "angular-materialAngular-agm",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
