@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { ControlPosition, ZoomControlStyle } from '@agm/core/services/google-maps-types';
-import { IMapData, IMapCoords, IMarker, IGeolocationCurrent } from '../../modals';
+import { IMapData, IMapCoords, IMarker, IGeolocationCurrent } from '../../models';
 
 @Component({
   selector: 'app-map',
